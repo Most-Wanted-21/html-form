@@ -75,3 +75,31 @@ button {
   /* Space the button to the right. */
   margin-left: .5em;
 }
+@media screen and (max-width: 650px) {
+
+  /* remove the width form the form so that
+   it is just as wide as the screen. */
+  form {
+    width: auto;
+  }
+
+  /* Turn labels into blocks so they can stretch
+  across the entire screen. Also, get rid of
+   the margin so that the text is left aligned.
+   Finally, set the width to auto so that it
+   isn't stuck at 90px. */
+   label {
+     display: block;
+     margin: 0;
+     text-align: left;
+     width: auto;
+   }
+
+  /* Let the inputs, textareas, and selects span
+  the entire screen, too. */
+  input,
+  select,
+  textarea {
+width: 100%
+  }
+}
